@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Theo Iturri" />
+    <title>Website</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <style>
+      body {
+        font-family: "Lucida Console", "Courier New", monospace;
+        background: linear-gradient(
+          to right,
+          rgb(189, 189, 255),
+          rgb(255, 233, 236)
+        );
+        padding: 0;
+        margin: 0;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active {
+        background-color: #04aa6d;
+      }
+
+      h1 {
+        background-color: black;
+        padding: 10px;
+        margin: 0;
+        color: #92a4ff;
+      }
+
+      div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 33vw;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      .centrado {
+        display: flex;
+        justify-content: center;
+      }
+      .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <head>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="preferencias.html">Geometría</a>
+        <a href="audiovisuales.html">Audiovisuales</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </head>
+
+    <div class="container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Y1N-qdKqwY0?si=SdLYDbBX-ImUQ442"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <section class="centrado">
+      <div class="gallery">
+        <a href="img/img1.jpg" target="_blank">
+          <img src="img/img1.jpg" height="600" alt="" />
+        </a>
+      </div>
+      <div class="gallery">
+        <a href="img/img2.jpg" target="_blank">
+          <img src="img/img2.jpg" height="600" alt="" />
+        </a>
+      </div>
+      <div class="gallery">
+        <a href="img/img3.jpg" target="_blank">
+          <img src="img/img3.jpg" height="600" alt="" />
+        </a>
+      </div>
+      <div class="gallery">
+        <a href="img/img4.jpg" target="_blank">
+          <img src="img/img4.jpg" height="600" alt="" />
+        </a>
+      </div>
+      <div class="gallery">
+        <a href="img/img2.webp" target="_blank">
+          <img src="img/img2.webp" height="600" alt="" />
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Derechos reservados &copy; 2025</p>
+    </footer>
+  </body>
+</html>
