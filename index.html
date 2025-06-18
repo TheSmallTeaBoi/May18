@@ -7,193 +7,92 @@
     <meta name="author" content="Theo Iturri" />
     <title>Website</title>
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-
-    <style>
-      body {
-        font-family: "Lucida Console", "Courier New", monospace;
-        background: linear-gradient(
-          to right,
-          rgb(189, 189, 255),
-          rgb(255, 233, 236)
-        );
-        padding: 0;
-        margin: 0;
-      }
-
-      header {
-        text-align: center;
-      }
-
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-      }
-
-      li {
-        float: left;
-      }
-
-      li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-
-      li a:hover:not(.active) {
-        background-color: #111;
-      }
-
-      .active {
-        background-color: #92a4ff;
-      }
-
-      .list {
-        background: none;
-      }
-
-      h1 {
-        background-color: black;
-        padding: 10px;
-        margin: 0;
-        color: #92a4ff;
-      }
-
-      h2 {
-        font-size: 24px;
-        margin: 0;
-        padding: 0;
-      }
-
-      .container {
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 20px;
-      }
-
-      p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-      }
-
-      .image {
-        float: right;
-        margin: 0 0 20px 20px;
-        max-width: 25%;
-        height: auto;
-      }
-
-      .image2 {
-        float: left;
-        margin: 0 20px 20px 0;
-        max-width: 25%;
-        height: auto;
-      }
-      .article {
-        float: left;
-        width: 70%;
-        background-color: #fff;
-        padding: 10px;
-        margin: 10px;
-        border: 1px solid #ccc;
-      }
-
-      .footer {
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-        clear: both;
-      }
-    </style>
+    <link rel="stylesheet" type="" href="style.css" />
   </head>
   <body>
-    <head>
-      <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="preferencias.html">Geometría</a>
-        <a href="audiovisuales.html">Audiovisuales</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-    </head>
-    <h1 style="margin: 15px">La Leyenda De La Flecha Plateada</h1>
-    <br />
-    <article class="container">
-      <h2>Historia</h2>
-      <img src="img/img1.jpg" class="image" />
-      <p>
-        En los años 70, en un pequeño taller de Milán, Italia, el excéntrico
-        constructor de bicicletas Giovanni Battista Rizzato (apodado "El Mago
-        del Sloping") creó una máquina que desafiaría todas las convenciones de
-        la época: "La Flecha Plateada", una bicicleta de ruta con un sloping
-        negativo tan pronunciado que parecía desafiar las leyes de la física.
-      </p>
-      <h3>Características legendarias:</h3>
-      <img src="img/img2.jpg" class="image" />
-      <ul class="list">
-        <li>
-          <p>
-            Cuadro: Acero Columbus SL, con un ángulo de tubo superior ascendente
-            (+5°), haciendo que el asiento quedara más alto que el manubrio, en
-            una postura casi de persecución aerodinámica... pero incómodamente
-            extrema.
-          </p>
-        </li>
-        <li>
-          <p>
-            Asiento: Una pieza artesanal de acero, curvada hacia adelante como
-            las "suspensiones" de las motos chopper, pero rígida como una
-            espada.
-          </p>
-        </li>
-        <li>
-          <p>Componentes: Campagnolo Super Record, con bielas de 165mm.</p>
-        </li>
-        <li>
-          <p>
-            Color: Un plateado metálico, posiblemente acero pulido, inspirado en
-            los autos de carreras de los 70.
-          </p>
-        </li>
-      </ul>
+    <div class="page">
+      <head>
+        <nav>
+          <a href="index.html" class="active">Home</a>
+          <a href="preferencias.html">Geometría</a>
+          <a href="audiovisuales.html">Audiovisuales</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </head>
+      <h1 style="margin: 15px">La Leyenda De La Flecha Plateada</h1>
+      <br />
+      <article class="container">
+        <h2>Historia</h2>
+        <img src="img/img1.jpg" class="image" />
+        <p>
+          En los años 70, en un pequeño taller de Milán, Italia, el excéntrico
+          constructor de bicicletas Giovanni Battista Rizzato (apodado "El Mago
+          del Sloping") creó una máquina que desafiaría todas las convenciones
+          de la época: "La Flecha Plateada", una bicicleta de ruta con un
+          sloping negativo tan pronunciado que parecía desafiar las leyes de la
+          física.
+        </p>
+        <h3>Características legendarias:</h3>
+        <img src="img/img2.jpg" class="image" />
+        <ul class="list">
+          <li>
+            <p>
+              Cuadro: Acero Columbus SL, con un ángulo de tubo superior
+              ascendente (+5°), haciendo que el asiento quedara más alto que el
+              manubrio, en una postura casi de persecución aerodinámica... pero
+              incómodamente extrema.
+            </p>
+          </li>
+          <li>
+            <p>
+              Asiento: Una pieza artesanal de acero, curvada hacia adelante como
+              las "suspensiones" de las motos chopper, pero rígida como una
+              espada.
+            </p>
+          </li>
+          <li>
+            <p>Componentes: Campagnolo Super Record, con bielas de 165mm.</p>
+          </li>
+          <li>
+            <p>
+              Color: Un plateado metálico, posiblemente acero pulido, inspirado
+              en los autos de carreras de los 70.
+            </p>
+          </li>
+        </ul>
 
-      <h3>La Historia de su Éxito (y su Misterioso Final)</h3>
+        <h3>La Historia de su Éxito (y su Misterioso Final)</h3>
 
-      <img src="img/img4.jpg" class="image2" />
-      <p>
-        En 1975, un desconocido ciclista amateur, Marco "El Halcón" Bellini,
-        ganó el Giro de Lombardía con esta bicicleta, sorprendiendo a todos por
-        su posición aerodinámica y su velocidad en los descensos. Los puristas
-        decían que era imposible que un cuadro con sloping negativo fuera
-        eficiente, pero La Flecha Plateada rompió las reglas.
-      </p>
-      <p>
-        Sin embargo, en 1978, tras una caída espectacular (pero no grave) en la
-        Milán-San Remo, la bicicleta desapareció misteriosamente del pelotón.
-        Algunos dicen que fue robada por un coleccionista suizo; otros, que
-        Rizzato la destruyó para evitar que su diseño revolucionario cayera en
-        manos equivocadas.
-      </p>
-      <p>
-        Hoy, solo quedan fotos borrosas y recuerdos de quienes juran haberla
-        visto, rodando como un fantasma en las carreteras de los Alpes al
-        amanecer.
-      </p>
-      <h3>¿Existió realmente? ¿Fue solo un mito?</h3>
-      <img src="img/img3.jpg" class="image" />
-      <p>
-        Nadie lo sabe... pero si alguna vez ves una bicicleta plateada con un
-        extraño ángulo invertido, no la persigas. Dicen que quien la monta,
-        nunca vuelve a ser el mismo.
-      </p>
-    </article>
-    <footer>
-      <p>Derechos reservados &copy; 2025</p>
-    </footer>
+        <img src="img/img3.jpg" class="image" />
+        <p>
+          En 1975, un desconocido ciclista amateur, Marco "El Halcón" Bellini,
+          ganó el Giro de Lombardía con esta bicicleta, sorprendiendo a todos
+          por su posición aerodinámica y su velocidad en los descensos. Los
+          puristas decían que era imposible que un cuadro con sloping negativo
+          fuera eficiente, pero La Flecha Plateada rompió las reglas.
+        </p>
+        <p>
+          Sin embargo, en 1978, tras una caída espectacular (pero no grave) en
+          la Milán-San Remo, la bicicleta desapareció misteriosamente del
+          pelotón. Algunos dicen que fue robada por un coleccionista suizo;
+          otros, que Rizzato la destruyó para evitar que su diseño
+          revolucionario cayera en manos equivocadas.
+        </p>
+        <p>
+          Hoy, solo quedan fotos borrosas y recuerdos de quienes juran haberla
+          visto, rodando como un fantasma en las carreteras de los Alpes al
+          amanecer.
+        </p>
+        <h3>¿Existió realmente? ¿Fue solo un mito?</h3>
+        <p>
+          Nadie lo sabe... pero si alguna vez ves una bicicleta plateada con un
+          extraño ángulo invertido, no la persigas. Dicen que quien la monta,
+          nunca vuelve a ser el mismo.
+        </p>
+      </article>
+      <footer>
+        <p>Derechos reservados &copy; 2025</p>
+      </footer>
+    </div>
   </body>
 </html>

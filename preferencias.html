@@ -7,168 +7,90 @@
     <meta name="author" content="Theo Iturri" />
     <title>Website</title>
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-    <style>
-      body {
-        font-family: "Lucida Console", "Courier New", monospace;
-        background: linear-gradient(
-          to right,
-          rgb(189, 189, 255),
-          rgb(255, 233, 236)
-        );
-        padding: 0;
-        margin: 0;
-      }
-
-      .container {
-        display: flex;
-        justify-content: center;
-      }
-
-      header {
-        text-align: center;
-      }
-
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-      }
-
-      li {
-        float: left;
-      }
-
-      li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-
-      li a:hover:not(.active) {
-        background-color: #111;
-      }
-
-      .active {
-        background-color: #92a4ff;
-      }
-
-      h1 {
-        background-color: black;
-        padding: 10px;
-        margin: 0;
-        color: #92a4ff;
-      }
-
-      table {
-        border-collapse: collapse;
-        border: 2px solid rgb(200, 200, 200);
-        letter-spacing: 1px;
-        font-size: 0.8rem;
-        background-color: #fff;
-      }
-
-      td {
-        border: 1px solid rgb(190, 190, 190);
-        padding: 10px 20px;
-      }
-
-      th {
-        border: 1px solid rgb(190, 190, 190);
-        padding: 10px 20px;
-        background-color: rgb(162, 162, 162);
-      }
-
-      .footer {
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-        clear: both;
-      }
-    </style>
+    <link rel="stylesheet" type="" href="style.css" />
   </head>
   <body>
-    <head>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="preferencias.html" class="active">Geometría</a>
-        <a href="audiovisuales.html">Audiovisuales</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-    </head>
-    <div>
-      <table>
-        <colgroup>
-          <col style="background-color: gray" />
-        </colgroup>
-        <colgroup></colgroup>
-        <colgroup></colgroup>
-        <colgroup></colgroup>
-        <colgroup></colgroup>
-        <colgroup></colgroup>
+    <div class="page">
+      <head>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="preferencias.html" class="active">Geometría</a>
+          <a href="audiovisuales.html">Audiovisuales</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </head>
+      <div class="table">
+        <table>
+          <colgroup>
+            <col class="left-side-table" />
+          </colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
+          <colgroup></colgroup>
 
-        <th>Medida</th>
-        <th>Valor</th>
-        <th>Explicación</th>
+          <th>Medida</th>
+          <th>Valor</th>
+          <th>Explicación</th>
 
-        <tr>
-          <td>Ángulo del tubo superior</td>
-          <td>+5° (sloping negativo)</td>
-          <td>Inclinado hacia <em>arriba</em>, creando una postura forzada.</td>
-        </tr>
-        <tr>
-          <td>Ángulo de tubo de dirección</td>
-          <td>72°</td>
-          <td>Clásico, pero compensando el tubo superior invertido.</td>
-        </tr>
-        <tr>
-          <td>Longitud del tubo superior (virtual)</td>
-          <td>54 cm</td>
-          <td>Más corto de lo normal para ajustar al sloping.</td>
-        </tr>
-        <tr>
-          <td>Alto del tubo de sillín (CTC)</td>
-          <td>56 cm</td>
-          <td>Tradicional, pero el sillín queda alto por el diseño.</td>
-        </tr>
-        <tr>
-          <td>Reach (alcance efectivo)</td>
-          <td>40 cm</td>
-          <td>Extremadamente corto, por el tubo superior invertido.</td>
-        </tr>
-        <tr>
-          <td>Stack (altura frontal)</td>
-          <td>50 cm</td>
-          <td>Bajo, forzando una <strong>posición agresiva</strong>.</td>
-        </tr>
-        <tr>
-          <td>Horquilla</td>
-          <td>Avance +6 cm</td>
-          <td>Curvada hacia adelante, como una horquilla chopper.</td>
-        </tr>
-        <tr>
-          <td>Distancia entre ejes</td>
-          <td>100 cm</td>
-          <td>Estable a pesar de la geometría rebelde.</td>
-        </tr>
-        <tr>
-          <td>Manubrio</td>
-          <td>420mm</td>
-          <td>Manubrio clásico</td>
-        </tr>
-        <tr>
-          <td>Tija de sillín</td>
-          <td>25 cm de retroceso</td>
-          <td>Evitaba que el ciclista volara hacia atrás.</td>
-        </tr>
-      </table>
+          <tr>
+            <td>Ángulo del tubo superior</td>
+            <td>+5° (sloping negativo)</td>
+            <td>
+              Inclinado hacia <em>arriba</em>, creando una postura forzada.
+            </td>
+          </tr>
+          <tr>
+            <td>Ángulo de tubo de dirección</td>
+            <td>72°</td>
+            <td>Clásico, pero compensando el tubo superior invertido.</td>
+          </tr>
+          <tr>
+            <td>Longitud del tubo superior (virtual)</td>
+            <td>54 cm</td>
+            <td>Más corto de lo normal para ajustar al sloping.</td>
+          </tr>
+          <tr>
+            <td>Alto del tubo de sillín (CTC)</td>
+            <td>56 cm</td>
+            <td>Tradicional, pero el sillín queda alto por el diseño.</td>
+          </tr>
+          <tr>
+            <td>Reach (alcance efectivo)</td>
+            <td>40 cm</td>
+            <td>Extremadamente corto, por el tubo superior invertido.</td>
+          </tr>
+          <tr>
+            <td>Stack (altura frontal)</td>
+            <td>50 cm</td>
+            <td>Bajo, forzando una <strong>posición agresiva</strong>.</td>
+          </tr>
+          <tr>
+            <td>Horquilla</td>
+            <td>Avance +6 cm</td>
+            <td>Curvada hacia adelante, como una horquilla chopper.</td>
+          </tr>
+          <tr>
+            <td>Distancia entre ejes</td>
+            <td>100 cm</td>
+            <td>Estable a pesar de la geometría rebelde.</td>
+          </tr>
+          <tr>
+            <td>Manubrio</td>
+            <td>420mm</td>
+            <td>Manubrio clásico</td>
+          </tr>
+          <tr>
+            <td>Tija de sillín</td>
+            <td>25 cm de retroceso</td>
+            <td>Evitaba que el ciclista volara hacia atrás.</td>
+          </tr>
+        </table>
+      </div>
+      <footer style="footer">
+        <p>Derechos reservados &copy; 2025</p>
+      </footer>
     </div>
-    <footer style="footer">
-      <p>Derechos reservados &copy; 2025</p>
-    </footer>
   </body>
 </html>

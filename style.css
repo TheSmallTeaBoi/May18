@@ -1,1 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
 
+@media screen and (orientation: landscape) {
+  .page {
+    width: 50%;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .page {
+    width: 80%;
+  }
+}
+
+.oswald-font {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.noto-sans-<uniquifier > {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+* {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px/1.5;
+  border-radius: 3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  color: #cdd6f4;
+  background-color: #1e1e2e;
+}
+
+nav {
+  color: #1e1e2e;
+  background-color: #7f849c;
+  padding: 1%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  width: 22%;
+  padding: 1%;
+  margin: auto;
+  background: #1e1e2e;
+  color: #cdd6f4;
+}
+
+nav a.active {
+  color: #a6e3a1;
+}
+
+nav a:hover {
+  background: #cdd6f4;
+  color: #1e1e2e;
+}
+
+.page {
+  background: #181825;
+  margin: auto;
+  padding: 2%;
+}
+
+.image {
+  border-radius: 5px;
+  width: 50%;
+  float: right;
+  padding: 1% 0 1% 3%;
+}
+
+footer {
+  padding: 1%;
+  background: #7f849c;
+  color: #181825;
+}
+
+/* Tablas */
+
+table {
+  border-collapse: collapse;
+  border: 2px solid #cdd6f4;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  background-color: #1e1e2e;
+}
+
+.table {
+  padding: 1%;
+}
+
+td {
+  border: 1px solid #45475a;
+  padding: 10px 20px;
+}
+
+th {
+  padding: 10px 20px;
+  background-color: #313244;
+}
+
+td:hover,
+th:hover {
+  background-color: #b4befe;
+  color: #1e1e2e;
+}
+
+.left-side-table {
+  background-color: #313244;
+}
+
+/* Galeria */
+
+div.gallery {
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5vh;
+}
+
+div.gallery:hover {
+  border: 1px solid #74c7ec;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 10vh;
+  height: auto;
+}
+
+@media screen and (orientation: landscape) {
+  .centered {
+    display: flex;
+  }
+}
+
+/* Formularios */
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 1vh 1vw;
+  margin: 1vh 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  background-color: #a6e3a1;
+  color: #1e1e2e;
+  padding: 1vh 1vw;
+  margin: 1vh 0;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #94e2d5;
+}
+
+div.contenedor-formulario {
+  background-color: #11111b;
+  padding: 3%;
+}
